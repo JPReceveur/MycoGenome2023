@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# nolint
+
 
 ###############
 # Purpose: Pull out sequences of genes of interest from bacterial taxa related to mycobacterium to create a phylogenetic tree
