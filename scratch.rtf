@@ -1,0 +1,33 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 conda activate ncbi_datasets\
+\
+datasets download genome taxon Actinoalloteichus\
+\
+\
+tar -xvf ncbi_dataset.zip\
+\
+ makeblastdb -in rpoC.fsa -dbtype nucl -parse_seqids\
+\
+ncbi_dataset/data/GCA_000239155.2/GCA_000239155.2_ASM23915v2_genomic.fna\
+\
+blastn -db ncbi_dataset/data/GCA_000239155.2/GCA_000239155.2_ASM23915v2_genomic.fna -query rpoC.fsa -out rpoCResults2.out\
+\
+datasets download genome taxon 
+\f1\fs26\fsmilli13333 \cf0 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec3 38288\
+unzip ncbi_dataset\
+\
+
+\f0\fs22 \cf2 \kerning1\expnd0\expndtw0 \CocoaLigature0 \outl0\strokewidth0 makeblastdb -in ncbi_dataset/data/GCF_000143825.1/GCF_000143825.1_ASM14382v1_genomic.fna  -dbtype nucl -parse_seqids\
+\
+makeblastdb -in rpoB2.fsa  -dbtype nucl -parse_seqids\
+\
+blastn -query rpoB2.fsa  -db ncbi_dataset/data/GCF_000143825.1/GCF_000143825.1_ASM14382v1_genomic.fna  -out rpoBResultsv3.out\
+\
+Michelle Jacobs re Schahram's dbGaP}
